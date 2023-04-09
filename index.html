@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Site</title>
+
+
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Chamando a folha de estilo CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Logo + Nome do site-->
+        <a href="#" class="logo"> LOGO!</a>
+
+        <!--Responsividade-->
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+
+        <!--Criação do Menu Superior-->
+        <nav class="navbar">
+            <a href="Inicio">Inicio</a>
+            <a href="Sobre Nós">Sobre</a>
+            <a href="Contato">Contato</a>
+            <a href="Avaliação">Avaliação</a>
+
+        </nav>
+    </header>
+
+    <script>
+
+        let menu = document.querySelector('menu-bar');
+        let navbar = document.querySelector('.navbar')
+
+        menu.addEventListener('click', () => {
+            navbar.classList.toggle('nav-toggle');
+        })
+
+
+    </script>
+</body>
+
+</html>

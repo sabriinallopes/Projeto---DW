@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+
+    --color1: #D1D0F2;
+    --color2: #77A1D9;
+    --color3: #314259;
+    --color4: #A68D6F;
+    --color5: #401D1A;
+    --gradient: linear-gradient(90 deg, var(var--color3), var(var(var(--color5))))
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: #D1D0F2;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--color2);
+    color: #fff;
+}
+
+html {
+
+    font-size: 62%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color3);
+    z-index: 1000;
+    padding: 2rem 9%;
+    border-bottom: .1rem solid var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LOGO*/
+header .logo {
+    color: var(--color4);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+header .navbar a {
+    color: var(--color4);
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+
+/*MUDAR A COR QUANDO PASSAR O PONTEIRO DO MOUSSE NO MENU*/
+header .navbar a:hover {
+    color: var(--color5);
+}
+
+header #menu-bar {
+    color: var(--color3);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #menu-bar {
+        display: block;
+    }
+
+    header .navbar {
+        background: var(--color3);
+        border-top: .1rem solid var(--color1);
+        padding: 1rem 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    header .navbar {
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+
+    header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: 1rem;
+        background: var(--gradient);
+        text-align: center;
+        border-radius: .5rem;
+    }
+
+
+
+}
