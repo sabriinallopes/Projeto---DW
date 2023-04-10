@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     outline: none;
-    color: #D1D0F2;
+    color: var(--color4);
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
@@ -29,12 +29,12 @@
 }
 
 html {
-
     font-size: 62%;
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
 }
+
 
 header {
     position: fixed;
@@ -50,6 +50,7 @@ header {
     justify-content: space-between;
 }
 
+
 /*LOGO*/
 header .logo {
     color: var(--color4);
@@ -57,10 +58,30 @@ header .logo {
     font-size: 2.5rem;
 }
 
+/*Alterar a Logo*/
+.logo i{
+    color: var(--color4);
+    font-size: 50px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: var(--color1);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+}
+
 header .navbar a {
     color: var(--color4);
     font-size: 2rem;
+    font-weight: 500;
+    padding: 5px 0;
     margin-left: 2.5rem;
+    transition: all .50s ease;
 }
 
 /*MUDAR A COR QUANDO PASSAR O PONTEIRO DO MOUSSE NO MENU*/
@@ -75,7 +96,32 @@ header #menu-bar {
     display: none;
 }
 
-@media (max-width: 768px) {
+/*ENTRAR E REGISTRAR*/
+header #acesso{
+
+    display: flex;
+    align-items: center;
+}
+
+header .acesso a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--color1);
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #A68D6F;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+@media (max-width: 1280px) {
 
     #menu-bar {
         display: block;
