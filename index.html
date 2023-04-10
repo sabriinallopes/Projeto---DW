@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu do Site</title>
+    <title>Página Inicial</title>
 
-
+    <!--Habilitar a fonte-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Habilitar os ícones-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!--Chamando a folha de estilo CSS-->
     <link rel="stylesheet" href="CSS/styles.css">
@@ -16,11 +20,13 @@
 </head>
 
 <body>
+    <!-- js link-->
+    <script type="text/javascript" src="js/script.js"></script>
 
     <header>
 
         <!--Logo + Nome do site-->
-        <a href="#" class="logo"> LOGO!</a>
+        <a href="#" class="logo"><i class="ri-bear-smile-fill"></i></i><span>É O BICHO</span></a>
 
         <!--Responsividade-->
         <div id="menu-bar" class="fas fa-bars"></div>
@@ -29,11 +35,17 @@
         <!--Criação do Menu Superior-->
         <nav class="navbar">
             <a href="Inicio">Inicio</a>
+            <a href="Pedidos">Pedidos</a>
             <a href="Sobre Nós">Sobre</a>
             <a href="Contato">Contato</a>
-            <a href="Avaliação">Avaliação</a>
-
         </nav>
+
+        <div class="acesso">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Entrar</a>
+            <a href="#"> Registrar</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
     </header>
 
     <script>
@@ -45,8 +57,33 @@
             navbar.classList.toggle('nav-toggle');
         })
 
-
     </script>
+
+
+  <!--Responsividade
+<header secundário-nav>
+  
+    <div class="Secundário-nav">
+        <div class = "cotainer">
+
+        <a href="Cachorros">Cachorros</a>
+        <a href="Gatos">Gatos</a>
+        <a href="Passáros">Passáros</a>
+        <a href="Todos os Produtos">Produtos</a>
+
+        </div>
+    </div>
+
+
+    </header>
+-->
+
+
+
+
+
+
+
 </body>
 
 </html>
