@@ -13,12 +13,14 @@
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!--Habilitar a fonte-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!--Habilitar os ícones-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>É O BICHO</title>
 
@@ -31,27 +33,27 @@
         <!--Inicio do Menu Superior-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="ri-bear-smile-line" style="color: #2ef273" alt="" width="30"
-                        height="24" class="d-inline-block align-text-top"></i> </a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-shield-dog fa-2xl" style="color: #145E8C;" alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
                 <a class="navbar-brand" href="#">É O BICHO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicío</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Acompanhar Pedido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promoções</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Sobre nós</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i>Entrar</a>
+                           </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -89,22 +91,18 @@
                             <li><a class="dropdown-item" href="#">Areias e Banheiros</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Passáros
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Alimentação</a></li>
-                            <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar na É o Bicho"
+                    <input class="form-control " type="search" placeholder="Buscar na É o Bicho"
                         aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
+
+                
+
+                
+
+              
             </div>
 
         </nav>
@@ -142,106 +140,100 @@
 
         
         <!-- Inicío do Slider de Produtos Recomendados-->
-        
         <section class="produtos"> 
-            <h3 class="produtosrecomendados">Produtos Recomendados</h3>
+            <h5 class="produtosrecomendados">Produtos Recomendados</h5>
             <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
             <div class="product-container">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="IMAGENS\1674144844486.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="IMAGENS\RaçãoGranPlus.png" class="product-thumb" alt="Ração GranPlus Menu para Cães Adultos de Porte Mini Sabor Carne e Arroz">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h4 class="product-brand">Ração GranPlus Menu para Cães Adultos de Porte Mini Sabor Carne e Arroz</h4>
+                        <h6 class="product-brand">Ração GranPlus Menu para Cães Adultos de Porte Mini Sabor Carne e Arroz</h6>
                         <span class="price">R$ 123,21</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="IMAGENS\1674141607786.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="IMAGENS\RaçãoGranPlusGourmet.png" class="product-thumb" alt="Ração GranPlus Gourmet para Cães Adultos de Médio e Grande Porte Sabor Ovelha e Arroz">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h4 class="product-brand">Ração GranPlus Gourmet para Cães Adultos de Médio e Grande Porte Sabor Ovelha e Arroz</h4>
-                        <span class="price">R$ 62,90</span>
+                        <h6 class="product-brand">Ração GranPlus Gourmet para Cães Adultos de Médio e Grande Porte Sabor Ovelha e Arroz</h6>
+                        <span class="price">R$ 215,90</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="IMAGENS\1674141494410.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="IMAGENS\RefeiçãoNaturalZee.png" class="product-thumb" alt="Refeição Natural Zee.Dog Kitchen para Cães Adultos Sabor Carne">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h4 class="product-brand">Ração Royal Canin Shih Tzu para Cães Filhotes</h4>
-                        <span class="price">R$ 71,71</span>
+                        <h6 class="product-brand">Refeição Natural Zee.Dog Kitchen para Cães Adultos Sabor Carne</h6>
+                        <span class="price">R$ 87,90</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1660162896325.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\RaçãoRoyalCaninFilhotes.png" class="product-thumb" alt="Ração Royal Canin Shih Tzu para Cães Filhotes">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h4 class="product-brand">brand</h4>
+                        <h6 class="product-brand">Ração Royal Canin Shih Tzu para Cães Filhotes</h6>
+                        <span class="price">R$ 71,70</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="IMAGENS\RaçãoRoyalCanin.png" class="product-thumb" alt="Ração Royal Canin Maxi para Cães Adultos de Porte Grande 15kg">
+                        <button class="card-btn">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Ração Royal Canin Maxi para Cães Adultos de Porte Grande 15kg</h6>
+                        <span class="price">R$ 430,75</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="IMAGENS\BiscoitoPedigreeBiscrok.png" class="product-thumb" alt="Biscoito Pedigree Biscrok Marrobone para Cães Adultos Sabor Carne">
+                        <button class="card-btn">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Biscoito Pedigree Biscrok Marrobone para Cães Adultos Sabor Carne</h6>
+                        <span class="price">R$ 23,69</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="IMAGENS\BiscoitoPetz.png" class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos">
+                        <button class="card-btn">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Biscoito Petz Clássico para Cães Adultos</h6>
                         <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
+                        <span class="price">R$ 29,98</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1660142146769.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="IMAGENS\BiscoitoPetzClássico.png" class="product-thumb" alt="Biscoito Petz Clássico para Cães Filhotes - 300g">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
+                        <h6 class="product-brand">Biscoito Petz Clássico para Cães Filhotes - 300g</h6>
+                        <span class="price">R$ 14,99</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1628688628512.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
+                        <img src="IMAGENS\RaçãoÚmidaPedigree.png" class="product-thumb" alt="Ração Úmida Pedigree Sachê Carne ao Molho para Cães Adultos de Raças Pequenas 100 g">
+                        <button class="card-btn">Adicionar ao carrinho</button>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1628688439545.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1627911682289.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="C:\Users\slpra\Documents\PROJETO\IMAGENS\1624544425002.png" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
+                        <h5 class="product-brand">Ração Úmida Pedigree Sachê Carne ao Molho para Cães Adultos de Raças Pequenas 100 g</h5>
+                        <span class="price">R$ 4,99</span>
                     </div>
                 </div>
                 </div>
@@ -250,7 +242,150 @@
         </section>
         
         <script src="script.js"></script>
+    <!-- FIM do Slider de Produtos Recomendados-->
+
+    <!-- Inicío do Slider de Produtos Recomendados-->
+        <section class="produtos"> 
+            <h5 class="produtosrecomendados">Marcas Recomendadas</h5>
+            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.petz.com.br/fotos/1658429301983.jpg" class="product-thumb" alt="Golden">
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Golden</h6>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.petz.com.br/fotos/1660162896325.jpg" class="product-thumb" alt="RoyalCanin">
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Royal Canin</h6>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.petz.com.br/fotos/1674495639326.jpg" class="product-thumb" alt="Hill">
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Hill's</h6>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.petz.com.br/fotos/1627397695513.jpg" class="product-thumb" alt="Nestlé Purina Pro Plan">
+                    </div>
+                    <div class="product-info">
+                        <h6 class="product-brand">Nestlé Purina Pro Plan</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!-- FIM do Slider de Produtos Recomendados-->
+
+        
+
     </div>
+
+    <!-- Criação do Foolder/Rodapé-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>É o Bicho</h1>
+                <p>Só quem é apaixonado por animais sabe: a relação de amor e cumplicidade que temos com nossos bichinhos de estimação é um vínculo único! Por essa razão, não medimos esforços para oferecer o que há de melhor para trazer ainda mais alegria e qualidade de vida. Rações, acessórios e brinquedos estão na nossa listinha de prioridades; e tudo isso você encontra em nosso Pet Shop online.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Institucional</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre o É o Bicho</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trabalhe Conosco</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Canal de Denúncias</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Nossas Políticas</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Entrega e Frete</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Pagamento e Reembolso</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trocas e Devoluções</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Campanhas e Promoções</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Atendimento</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Meus Pedidos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Meu Cadastro</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ouvidoria</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h5>Cadastre-se e receba nossas promoções e novidades antes de todo mundo.</h5>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados
+        </div>
+    </footer>
+       
+    <!-- fim do Foolder/Rodapé-->
 
     <!-- JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
