@@ -341,7 +341,15 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color:#2EF273;
+  color:#0D0D0D;
   text-decoration: underline;
 }
 /*Fim Migalha de Pão*/
+
+.btn-racao{
+
+  background-color: #076539;
+  border: #076539;
+  color: white;
+
+}
