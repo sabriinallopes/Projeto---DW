@@ -1,0 +1,44 @@
+.carrinho {
+    text-align: justify;
+    font-size: 40px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 40% 70% 23%;
+    align-items: center;
+}
+
+.itemNome {
+    text-transform: uppercase;
+}
+
+.quantidade {
+    text-align: center;
+    width: 2.4rem;
+    border: 1px solid;
+}
+
+.remove {
+    font-size: 24px;
+    cursor: pointer;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.75rem;
+}
+
+.btnCompra {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 7px 18px;
+    font-size: 25px;
+    background-color: #4169E1;
+    border: none;
+    margin-right: 1rem;
+}
