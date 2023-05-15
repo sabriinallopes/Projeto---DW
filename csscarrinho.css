@@ -17,19 +17,23 @@
     text-align: center;
     width: 2.4rem;
     border: 1px solid;
+    margin-right: 15px;
+    padding: 2px 5px;
 }
 
 .remove {
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     justify-content: flex-end;
     display: flex;
+    margin-right: 8px;
+    
 }
 
 .total {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .btnCompra {
@@ -40,5 +44,7 @@
     font-size: 25px;
     background-color: #4169E1;
     border: none;
-    margin-right: 1rem;
+    margin-right: 10%;
+    margin-bottom: 6px;
+    
 }
