@@ -1,6 +1,4 @@
-
-
-/*nicío do Slider de Produtos Recomendados*/
+/*Inicío do Slider de Produtos Recomendados*/
 .produtos {
     position: relative;
     overflow: hidden;
@@ -166,6 +164,44 @@
   
 /*FIM do Slider de Produtos Recomendados*/
 
+/*Inicio Migalha de Pão*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color:#0D0D0D;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #145E8C;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color:#0D0D0D;
+  text-decoration: underline;
+}
+/*Fim Migalha de Pão*/
+
+.btn-racao{
+
+  background-color: #076539;
+  border: #076539;
+  color: white;
+
+}
+
 /*Inicio do Rodape*/
 * {
   font-family: 'Inter', sans-serif;
@@ -313,43 +349,6 @@ footer {
       padding: 3rem 2rem;
   }
 }
-
 /*Fim do Rodape*/
 
-/*Inicio Migalha de Pão*/
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-}
 
-ul.breadcrumb li {
-  display: inline;
-  font-size: 14px;
-}
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color:#0D0D0D;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #145E8C;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color:#0D0D0D;
-  text-decoration: underline;
-}
-/*Fim Migalha de Pão*/
-
-.btn-racao{
-
-  background-color: #076539;
-  border: #076539;
-  color: white;
-
-}
