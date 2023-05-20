@@ -1,5 +1,7 @@
 let carrinho = document.querySelector('.carrinhoCompras');
 
+var imgProd, nomeProd, precoProd, carrinhoItens;
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -54,9 +56,9 @@ function mudaQtda(event) {
 function addProdutos(event) {
     var botaoAdicionar = event.target;
     var itensLoja = botaoAdicionar.parentElement;
-    var nomeProd = itensLoja.getElementsByClassName('product-brand')[0].innerText;
-    var precoProd = itensLoja.getElementsByClassName('price')[0].innerText;
-    var imgProd = itensLoja.getElementsByClassName('product-image')[0].src;
+     nomeProd = itensLoja.getElementsByClassName('product-brand')[0].innerText;
+     precoProd = itensLoja.getElementsByClassName('price')[0].innerText;
+     imgProd = itensLoja.getElementsByClassName('product-image')[0].src;
     console.log(nomeProd, precoProd, imgProd);
     addProdutosCarrinho(nomeProd, precoProd, imgProd);
     totalCompra();
@@ -65,7 +67,7 @@ function addProdutos(event) {
 function addProdutosCarrinho(nomeProd, precoProd, imgProd) {
     var carrinhoLoja = document.createElement('div');
     carrinhoLoja.classList.add('product-card');
-    var carrinhoItens = document.getElementsByClassName('product-container');
+    carrinhoItens = document.getElementsByClassName('product-container');
     var nomeItensCarrinho = carrinhoItens.getElementsByClassName('product-brand');
     for (var i = 0; i < nomeItensCarrinho.length; i++) {
         alert("Produto adicionado ao carrinho");
@@ -80,10 +82,10 @@ alt="${nomeProd}">
 <div class="product-info">
 <span class="price">${precoProd}</span>`
 
-carrinhoItens.innerHTML = carrinhoTem;
-carrinhoLoja.append(carrinhoItens);
-carrinhoItens.getElementsByClassName(remove)[0].addEventListener("click", removeitens);
-carrinhoItens.getElementsByClassName(quantidade)[0].addEventListener("cange", mudaQtda);
+document.getElementsByClassName('carrinhoItens').innerHTML = carrinhoTem;
+carrinhoLoja.append('carrinhoItens');
+carrinhoItens.getElementsByClassName('remove')[0].addEventListener("click", removeitens);
+carrinhoItens.getElementsByClassName('quantidade')[0].addEventListener("cange", mudaQtda);
 //FIM ADICIONAR ITENS
 
 //INICIO TOTAL COMPRA
