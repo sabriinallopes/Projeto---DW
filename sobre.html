@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós | PetShop</title>
 
+    <!--ICONE PAGINA WEB-->
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" />
+
     <!--REFERENCIAS-->
     <!-- Chamando o arquivo CSS-->
     <link rel="stylesheet" href="styles.css">
@@ -31,60 +34,60 @@
     <!--DEIXA TODA PÁGINA RESPONSIVA-->
     <div class="container-fluid">
 
-       <!--INICÍO DO MENU SUPERIOR-->
-       <nav class=" navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#145E8C;"
-                alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
-            <a class="navbar-brand" href="index.html">PETSHOP</a>
+        <!--INICÍO DO MENU SUPERIOR-->
+        <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#145E8C;"
+                    alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
+                <a class="navbar-brand" href="index.html">PETSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acompanharPedido.html">Acompanhar Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" rel="" class="nav-link">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="visuallyhidden">Entrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <!--FIM DO MENU SUPERIOR-->
+
+        <!--INICIO BARRA DE ATALHOS-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-lg-0">
+                <form class="d-flex w-100">
+                    <input class="form-control me-2" type="search" placeholder="Buscar no PetShop" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-lg-">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acompanharPedido.html">Acompanhar Pedido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" rel="" class="nav-link">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="visuallyhidden">Entrar/Cadastrar</span>
+                        <a href="carrinho.html" rel="" class="nav-link" >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="visuallyhidden">Carrinho</span>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre nós</a>
                     </li>
                 </ul>
             </div>
-    </nav>
-    <!--FIM DO MENU SUPERIOR-->
-
-    <!--INICIO BARRA DE ATALHOS-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <form class="d-flex w-100">
-                <input class="form-control me-2" type="search" placeholder="Buscar no PetShop" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-            <ul class="navbar-nav ms-auto mb-lg-">
-                <li class="nav-item">
-                    <a href="carrinho.html" rel="" class="nav-link">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="visuallyhidden">Carrinho</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--FIM BARRA DE ATALHOS-->
+        </nav>
+        <!--FIM BARRA DE ATALHOS-->
 
         <!--INICIO DO MENU SECUNDÁRIO-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
