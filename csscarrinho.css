@@ -4,32 +4,66 @@
 }
 
 .produtos {
-    display: grid;
+    display: flex;
     grid-template-columns: 40% 70% 23%;
     align-items: center;
 }
 
-.itemNome {
-    text-transform: uppercase;
+.produtoImage {
+    width: 20%;
+    height: 195px;
 }
 
-.quantidade {
+.qty {
     text-align: center;
-    width: 2.4rem;
+    width: 2rem;
     border: 1px solid;
+    justify-content: flex-end;
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    font-style: initial;
+    border-radius: 6px;
 }
 
-.remove {
+.btnMenos,
+.btnMais {
+    border: 0.1;
+    background-color: transparent;
+    padding: 1px 5px;
+    font-size: 22px;
+    border: none;
+}
+
+/*.qty {
+    
+}
+
+/*.remove {
     font-size: 24px;
     cursor: pointer;
     justify-content: flex-end;
     display: flex;
+    flex-wrap: wrap;
+    border: none;
+}*/
+
+.btnRemove {
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
 }
 
 .total {
     display: flex;
     justify-content: flex-end;
     font-size: 1.75rem;
+    margin-right: 4%;
+}
+
+button {
+    cursor: pointer;
 }
 
 .btnCompra {
@@ -40,6 +74,68 @@
     font-size: 25px;
     background-color: #BDEAF2;
     border: none;
-    margin-right: 1rem;
-    margin-left: 90%;
+    margin-top: 0.5%;
+    margin-left: 82%;
+}
+
+/*.product {
+    position: relative;
+    width: 50%;
+    height: 195px;
+    overflow: hidden;
+    display: flex;
+}
+
+/*.detalhes {
+    display: flex;
+    margin-top: 2.5%;
+    font-size: 18px;
+    flex-flow: row wrap;
+    align-content: space-around;
+    gap: 30px;
+    column-gap: 30px;
+}*/
+
+table {
+    width: 120%;
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+tbody {
+    margin: auto;
+
+    td {
+        border-bottom: 8px solid;
+        text-align: center;
+
+    }
+
+    .itemNome {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 17px;
+        align-items: center;
+        display: flex;
+    }
+
+    .itemPreco {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+    }
+
+    /*.qty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+}
 }
