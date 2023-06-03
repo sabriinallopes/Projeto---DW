@@ -123,7 +123,7 @@
 
         <!--INICIO CARRINHO-->
         <div class="carrinhoCompras">
-            <h2 class="carrinho">Seu carrinho</h2>
+            <h2 class="carrinho">Carrinho</h2>
             <div class="produtos">
                 <div class="detalhes">
                     <section>
@@ -135,7 +135,7 @@
                                     <th>Preço</th>
                                     <th>Quantidade</th>
                                     <th>Total produto</th>
-                                    <th>Remover</th>
+                                    <th></th>
                                 </tr>
                                 </tr>
                             </thead>
@@ -143,18 +143,14 @@
                                 <td class="produtoImage"> <img src="https://images.petz.com.br/fotos/1628688499151.jpg"
                                         class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos"></td>
                                 <td class="itemNome">Bifinho KelDog Mini para Cães Adultos Sabor Carne - 500g</td>
-                                <td class="itemPreco">R$ 21,52</td>
+                                <td class="itemPreco">R$21,52</td>
                                 <td>
                                     <div>
-                                    <!--<input class="qty">
-                                        <button class="btnMenos" onclick="mudaQtdaMenos()">-</button>
-                                        <label class="qtyQuantidade" for="quant = ">1</label>
-                                        <button class="btnMais" onclick="mudaQtdaMais()">+</button>-->
                                         <input type="number" value="1" class="qty" min="0">
                                     </div>
                                 </td>
-                                <td class="itemPreco">R$ 21,52</td>
-                                <td><button class="btnRemove" onclick="removeItens()"><i
+                                <td class="itemPreco">R$21,52</td>
+                                <td><button class="btnRemove" onclick="removeItens(event)"><i
                                             class='bx bxs-trash remove'></i></button></td>
                             </tbody>
                             <tbody>
@@ -178,7 +174,7 @@
             </div>
             <div class="total">
                 <div class="totalTitulo">Total: </div>
-                <div class="totalPreco">R$ 0</div>
+                <div class="totalPreco">R$0</div>
             </div>
             <div><button type="submit" class="btnCompra" onclick="finalizar()">Finalizar Pedido</button></div>
         </div>

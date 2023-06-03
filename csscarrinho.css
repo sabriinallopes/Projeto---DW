@@ -1,6 +1,11 @@
 .carrinho {
     text-align: justify;
     font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+    color: #808080;
 }
 
 .produtos {
@@ -10,8 +15,8 @@
 }
 
 .produtoImage {
-    width: 20%;
-    height: 195px;
+    width: 7.5%;
+    height: 140px;
 }
 
 .qty {
@@ -21,38 +26,20 @@
     justify-content: flex-end;
     display: flex;
     margin: auto;
-    font-size: 30px;
+    font-size: 23px;
     font-style: initial;
     border-radius: 6px;
-}
-
-.btnMenos,
-.btnMais {
-    border: 0.1;
-    background-color: transparent;
-    padding: 1px 5px;
-    font-size: 22px;
     border: none;
-}
-
-/*.qty {
-    
-}
-
-/*.remove {
-    font-size: 24px;
     cursor: pointer;
-    justify-content: flex-end;
-    display: flex;
-    flex-wrap: wrap;
-    border: none;
-}*/
+}
 
 .btnRemove {
     border: none;
     font-size: 30px;
     text-align: center;
     margin: auto;
+    color: #363636;
+    background-color: #fff;
 }
 
 .total {
@@ -72,29 +59,24 @@ button {
     cursor: pointer;
     padding: 7px 18px;
     font-size: 25px;
-    background-color: #BDEAF2;
+    background-color: #C0C0C0;
     border: none;
     margin-top: 0.5%;
     margin-left: 82%;
+    margin-bottom: 2%;
 }
 
-/*.product {
-    position: relative;
-    width: 50%;
-    height: 195px;
-    overflow: hidden;
-    display: flex;
+.itemNome {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-/*.detalhes {
-    display: flex;
-    margin-top: 2.5%;
-    font-size: 18px;
-    flex-flow: row wrap;
-    align-content: space-around;
-    gap: 30px;
-    column-gap: 30px;
-}*/
+.itemPreco {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 17px;
+}
 
 table {
     width: 115%;
@@ -105,6 +87,7 @@ thead {
     text-align: center;
     text-transform: uppercase;
     margin: auto;
+    color: #4F4F4F;
 }
 
 tbody {
@@ -113,7 +96,6 @@ tbody {
     td {
         border-bottom: 8px solid;
         text-align: center;
-
     }
 
     .itemNome {
@@ -131,11 +113,5 @@ tbody {
         align-items: center;
         display: flex;
     }
-
-    /*.qty {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }*/
 }
 }

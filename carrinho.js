@@ -38,8 +38,9 @@ function ready() {
 function removeItens(event) {
     var botaoRemover = event.target;
     botaoRemove.parentElement.remove();
+    alert("Item Removido");
     totalCompra();
-    alert("Item Removido")
+    
 }
 //FIM BOTÃO REMOVER
 
