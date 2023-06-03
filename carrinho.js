@@ -15,7 +15,7 @@ function ready() {
     console.log(removeitens)
     for (var i = 0; i < removeitens.length; i++) {
         var botaoRemove = removeitens[i];
-        botaoRemove.addEventListener('click', removeitens);
+        botaoRemove.addEventListener('click', removeItens);
     }
     //ALTERAÇÃO DE QUANTIDADE
     var quantity = document.getElementsByClassName('quantidade')
@@ -35,10 +35,12 @@ function ready() {
 
 }
 
-function removeitens(event) {
+function removeItens(event) {
     var botaoRemover = event.target;
     botaoRemove.parentElement.remove();
+    alert("Item Removido");
     totalCompra();
+    
 }
 //FIM BOTÃO REMOVER
 
@@ -50,6 +52,7 @@ function mudaQtda(event) {
     }
     totalCompra();
 }
+
 //FIM ALTERAÇÃO DE QUANTIDADE
 
 //INICIO ADICIONAR ITEMS
@@ -104,7 +107,9 @@ function totalCompra() {
 
         document.getElementsByClassName('totalPreco')[0].innerText = "R$" + total;
     }
-
+}
+function finalizar(){
+    alert("Pedido realizado com sucesso");
 }
 //FIM TOTAL COMPRA
 

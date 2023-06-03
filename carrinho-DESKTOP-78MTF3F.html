@@ -35,8 +35,8 @@
     <div class="container-fluid">
 
         <!--INICÍO DO MENU SUPERIOR-->
-        <nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#F0E8E1;">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#635EF2;"
+        <nav class=" navbar navbar-expand-lg navbar-light bg-light" style="background-color: aqua;">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#145E8C;"
                     alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
                 <a class="navbar-brand" href="index.html">PETSHOP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,11 +49,13 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
                         </li>
-
                         <li class="nav-item">
-                            <a href="login.html" rel="" class="nav-link">
+                            <a class="nav-link" href="acompanharPedido.html">Acompanhar Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" rel="" class="nav-link">
                                 <i class="fa-solid fa-user"></i>
-                                <span class="visuallyhidden">Entrar</span>
+                                <span class="visuallyhidden">Entrar/Cadastrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -65,7 +67,7 @@
         <!--FIM DO MENU SUPERIOR-->
 
         <!--INICIO BARRA DE ATALHOS-->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F0E8E1;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -77,7 +79,7 @@
                 </form>
                 <ul class="navbar-nav ms-auto mb-lg-">
                     <li class="nav-item">
-                        <a href="carrinho.html" rel="" class="nav-link">
+                        <a href="#" rel="" class="nav-link">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="visuallyhidden">Carrinho</span>
                         </a>
@@ -88,7 +90,7 @@
         <!--FIM BARRA DE ATALHOS-->
 
         <!--INICIO DO MENU SECUNDÁRIO-->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F0E8E1;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -123,60 +125,21 @@
 
         <!--INICIO CARRINHO-->
         <div class="carrinhoCompras">
-            <h2 class="carrinho">Carrinho</h2>
+            <h2 class="carrinho">Seu carrinho</h2>
             <div class="produtos">
                 <div class="detalhes">
-                    <section>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Produtos</th>
-                                    <th>Nome</th>
-                                    <th>Preço</th>
-                                    <th>Quantidade</th>
-                                    <th>Total produto</th>
-                                    <th></th>
-                                </tr>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <td class="produtoImage"> <img src="https://images.petz.com.br/fotos/1628688499151.jpg"
-                                        class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos"></td>
-                                <td class="itemNome">Bifinho KelDog Mini para Cães Adultos Sabor Carne - 500g</td>
-                                <td class="itemPreco">R$21,52</td>
-                                <td>
-                                    <div>
-                                        <input type="number" value="1" class="qty" min="0">
-                                    </div>
-                                </td>
-                                <td class="itemPreco">R$21,52</td>
-                                <td><button class="btnRemove" onclick="removeItens(event)"><i
-                                            class='bx bxs-trash remove'></i></button></td>
-                            </tbody>
-                            <tbody>
-                                <td class="produtoImage"> <img src="https://images.petz.com.br/fotos/1661783580698.jpg"
-                                        class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos"></td>
-                                <td class="itemNome">Bifinho Keldog para Cães Adultos Sabor Churrasco</td>
-                                <td class="itemPreco">R$ 26,99</td>
-                                <td>
-                                    <div>
-                                        <input type="number" value="1" class="qty" min="0">
-                                    </div>
-                                </td>
-                                <td class="itemPreco">R$ 26,99</td>
-                                <td><button class="btnRemove" onclick="removeItens()"><i
-                                            class='bx bxs-trash remove'></i></button></td>
-                            </tbody>
-                        </table>
-                    </section>
-
+                    <div class="itemNome"></div>
+                    <div class="itemPreco"></div>
+                    <input type="number" value="1" class="quantidade">
+                    <i class='bx bxs-trash remove'></i>
                 </div>
+                
             </div>
             <div class="total">
                 <div class="totalTitulo">Total: </div>
-                <div class="totalPreco">R$0</div>
+                <div class="totalPreco">R$ 0</div>
             </div>
-            <div><button type="submit" class="btnCompra" onclick="finalizar()">Finalizar Pedido</button></div>
+            <button type="button" class="btnCompra" href="acompanharPedido.html">Finalizar Pedido</button>
         </div>
         <!--fIM CARRINHO-->
 
