@@ -1,56 +1,35 @@
 .carrinho {
     text-align: justify;
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 2%;
-    margin-top: 2%;
-    font-weight: bold;
-    color: #808080;
 }
 
 .produtos {
-    display: flex;
+    display: grid;
     grid-template-columns: 40% 70% 23%;
     align-items: center;
 }
 
-.produtoImage {
-    width: 7.5%;
-    height: 140px;
+.itemNome {
+    text-transform: uppercase;
 }
 
-.qty {
+.quantidade {
     text-align: center;
-    width: 2rem;
+    width: 2.4rem;
     border: 1px solid;
+}
+
+.remove {
+    font-size: 24px;
+    cursor: pointer;
     justify-content: flex-end;
     display: flex;
-    margin: auto;
-    font-size: 23px;
-    font-style: initial;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-}
-
-.btnRemove {
-    border: none;
-    font-size: 30px;
-    text-align: center;
-    margin: auto;
-    color: #363636;
-    background-color: #fff;
 }
 
 .total {
     display: flex;
     justify-content: flex-end;
     font-size: 1.75rem;
-    margin-right: 4%;
-}
-
-button {
-    cursor: pointer;
 }
 
 .btnCompra {
@@ -59,8 +38,9 @@ button {
     cursor: pointer;
     padding: 7px 18px;
     font-size: 25px;
-    background-color: #C0C0C0;
+    background-color: #4169E1;
     border: none;
+
     margin-top: 0.5%;
     margin-left: 82%;
     margin-bottom: 2%;
@@ -115,3 +95,7 @@ tbody {
         display: flex;
     }
 }
+
+    margin-right: 1rem;
+}
+
