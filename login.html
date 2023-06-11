@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" />
 
     <link rel="stylesheet" href="stylelogin.css">
+    
 </head>
 
 <body>
@@ -26,13 +27,13 @@
                 <h1>LOGIN</h1>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <input type="text" name="usuario" maxlength="30"placeholder="Usuário">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="senha" maxlength="20" placeholder="Senha">
                 </div>
-                <button class="btn-login">Login</button>
+                <button type ="submit"class="btn-login">Login</button>
                 <button class="btn-login" onclick="window.location.href = 'cadastro.html'">Cadastre-se</button>
 
 

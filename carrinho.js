@@ -1,7 +1,5 @@
 let carrinho = document.querySelector('.carrinhoCompras');
 
-var imgProd, nomeProd, precoProd, carrinhoItens, carrinhoLoja;
-
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -15,7 +13,7 @@ function ready() {
     console.log(removeitens)
     for (var i = 0; i < removeitens.length; i++) {
         var botaoRemove = removeitens[i];
-        botaoRemove.addEventListener('click', removeItens);
+        botaoRemove.addEventListener('click', removeitens);
     }
     //ALTERAÇÃO DE QUANTIDADE
     var quantity = document.getElementsByClassName('quantidade')
@@ -35,12 +33,10 @@ function ready() {
 
 }
 
-function removeItens(event) {
+function removeitens(event) {
     var botaoRemover = event.target;
     botaoRemove.parentElement.remove();
-    alert("Item Removido");
     totalCompra();
-
 }
 //FIM BOTÃO REMOVER
 
@@ -52,27 +48,25 @@ function mudaQtda(event) {
     }
     totalCompra();
 }
-
 //FIM ALTERAÇÃO DE QUANTIDADE
 
 //INICIO ADICIONAR ITEMS
 function addProdutos(event) {
     var botaoAdicionar = event.target;
     var itensLoja = botaoAdicionar.parentElement;
-    nomeProd = itensLoja.getElementsByClassName('product-brand')[0]?.innerText;
-    precoProd = itensLoja.getElementsByClassName('price')[0]?.innerText;
-    imgProd = itensLoja.getElementsByClassName('product-image')[0]?.src;
+    var nomeProd = itensLoja.getElementsByClassName('product-brand')[0].innerText;
+    var precoProd = itensLoja.getElementsByClassName('price')[0].innerText;
+    var imgProd = itensLoja.getElementsByClassName('product-image')[0].src;
     console.log(nomeProd, precoProd, imgProd);
     addProdutosCarrinho(nomeProd, precoProd, imgProd);
     totalCompra();
-    alert("Produto adicionado");
 }
 
 function addProdutosCarrinho(nomeProd, precoProd, imgProd) {
-    carrinhoLoja = document.createElement('div');
+    var carrinhoLoja = document.createElement('div');
     carrinhoLoja.classList.add('product-card');
     var carrinhoItens = document.getElementsByClassName('product-container');
-    var nomeItensCarrinho = document.getElementsByClassName('product-brand');
+    var nomeItensCarrinho = carrinhoItens.getElementsByClassName('product-brand');
     for (var i = 0; i < nomeItensCarrinho.length; i++) {
         alert("Produto adicionado ao carrinho");
         return;
@@ -92,7 +86,7 @@ alt="${nomeProd}">
 carrinhoItens.innerHTML = carrinhoTem;
 carrinhoLoja.append(carrinhoItens);
 carrinhoItens.getElementsByClassName(remove)[0].addEventListener("click", removeitens);
-carrinhoItens.getElementsByClassName(quantidade)[0].addEventListener("change", mudaQtda);
+carrinhoItens.getElementsByClassName(quantidade)[0].addEventListener("cange", mudaQtda);
 //FIM ADICIONAR ITENS
 
 //INICIO TOTAL COMPRA
@@ -112,7 +106,7 @@ function totalCompra() {
         document.getElementsByClassName('totalPreco')[0].innerText = "R$" + total;
     }
 }
-function finalizar() {
+function finalizar(){
     alert("Pedido realizado com sucesso");
 }
 //FIM TOTAL COMPRA
