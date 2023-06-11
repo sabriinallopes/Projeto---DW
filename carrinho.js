@@ -40,7 +40,7 @@ function removeItens(event) {
     botaoRemove.parentElement.remove();
     alert("Item Removido");
     totalCompra();
-    
+
 }
 //FIM BOTÃO REMOVER
 
@@ -65,6 +65,7 @@ function addProdutos(event) {
     console.log(nomeProd, precoProd, imgProd);
     addProdutosCarrinho(nomeProd, precoProd, imgProd);
     totalCompra();
+    alert("Produto adicionado");
 }
 
 function addProdutosCarrinho(nomeProd, precoProd, imgProd) {
@@ -77,6 +78,9 @@ function addProdutosCarrinho(nomeProd, precoProd, imgProd) {
         return;
     }
 
+}
+function addProd() {
+    alert("Produto adicionado ao carrinho!")
 }
 var carrinhoTem = `<img src="${imgProd}" class="product-thumb"
 alt="${nomeProd}">
@@ -108,7 +112,7 @@ function totalCompra() {
         document.getElementsByClassName('totalPreco')[0].innerText = "R$" + total;
     }
 }
-function finalizar(){
+function finalizar() {
     alert("Pedido realizado com sucesso");
 }
 //FIM TOTAL COMPRA
