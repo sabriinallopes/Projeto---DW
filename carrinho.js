@@ -73,6 +73,9 @@ function addProdutosCarrinho(nomeProd, precoProd, imgProd) {
     }
 
 }
+function addProd() {
+    alert("Produto adicionado ao carrinho!")
+}
 var carrinhoTem = `<img src="${imgProd}" class="product-thumb"
 alt="${nomeProd}">
 <button class="card-btn">Adicionar ao carrinho</button>
@@ -102,7 +105,9 @@ function totalCompra() {
 
         document.getElementsByClassName('totalPreco')[0].innerText = "R$" + total;
     }
-
+}
+function finalizar(){
+    alert("Pedido realizado com sucesso");
 }
 //FIM TOTAL COMPRA
 
