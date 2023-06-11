@@ -400,6 +400,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+                               
+  <script>
+    // Verifique o estado de login ao carregar a página
+    window.addEventListener('load', function() {
+      var isLoggedIn = localStorage.getItem('isLoggedIn');
+
+      if (isLoggedIn === 'true') {
+        // Usuário está logado, exiba a opção "Meus Dados" no menu
+        var meuDadosLink = document.getElementById('meu-dados-link');
+        meuDadosLink.style.display = 'block';
+      }
+    });
+  </script>
 
 </body>
 
