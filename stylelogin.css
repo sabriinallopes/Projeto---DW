@@ -100,7 +100,7 @@ body{
 .btn-login{
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin: 7px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -129,6 +129,18 @@ body{
     align-items: center;
     background-color: #FBE292;
     padding: 1rem;
+}
+
+.form-image2{
+   
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBE292;
+    padding: 1rem;
+
+
 }
 
 .form-image img {
@@ -307,5 +319,7 @@ body{
         margin-top: 0.5rem;
     }
 }
+
+
 
   

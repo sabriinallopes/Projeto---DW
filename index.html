@@ -33,7 +33,8 @@
     <!--DEIXA TODA PÁGINA RESPONSIVA-->
     <div class="container-fluid">
         <!--INICÍO DO MENU SUPERIOR-->
-        <nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#FBE292">
+            background-color: #310273;
+        <nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#635EF2">
             <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#FFAC42;"
                     alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
                 <a class="navbar-brand" href="index.html">PETSHOP</a>
@@ -400,19 +401,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-                               
-  <script>
-    // Verifique o estado de login ao carregar a página
-    window.addEventListener('load', function() {
-      var isLoggedIn = localStorage.getItem('isLoggedIn');
 
-      if (isLoggedIn === 'true') {
-        // Usuário está logado, exiba a opção "Meus Dados" no menu
-        var meuDadosLink = document.getElementById('meu-dados-link');
-        meuDadosLink.style.display = 'block';
-      }
-    });
-  </script>
+    
+        <script>
+            // Verifique o estado de login ao carregar a página
+            window.addEventListener('load', function() {
+              var isLoggedIn = localStorage.getItem('isLoggedIn');
+        
+              if (isLoggedIn === 'true') {
+                // Usuário está logado, exiba a opção "Meus Dados" no menu
+                var meuDadosLink = document.getElementById('meu-dados-link');
+                meuDadosLink.style.display = 'block';
+              }
+            });
+          </script>
 
 </body>
 
