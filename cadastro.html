@@ -28,33 +28,31 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" onblur="validaNome()" placeholder="Digite seu primeiro nome"
-                            required>
+                        <input id="nome" type="text" name="firstname" onblur="validaNome()" placeholder="Digite seu primeiro nome" required>
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <input id="sobrenome" type="text" name="lastname" onblur="validaSobrenome()" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <input id="email" type="email" name="email" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>
                     </div>
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <input id="numero" type="tel" name="number" placeholder="(xx) xxxx-xxxx" onblur="validaNumero(numero)" required>
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        <input id="senha" type="password" name="password" onblur="validaSenha()" placeholder="Digite sua senha" required>
                     </div>
-
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword"
+                        <input id="confirmaSenha" onblur="confirmaSenha()" type="password" name="confirmPassword"
                             placeholder="Digite sua senha novamente" required>
                     </div>
 
