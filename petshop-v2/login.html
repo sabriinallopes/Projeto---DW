@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|PetShop</title>
+
+    <!-- Código para colocar um icon na página-->
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" />
+
+    <link rel="stylesheet" href="./css/stylelogin.css">
+
+    <!--<script>
+        function fazerLogin() {
+            var usuario = document.getElementsByName('usuario')[0].value;
+            var senha = document.getElementsByName('senha')[0].value;
+
+            // Verifique as credenciais de login no lado do cliente
+            if (usuario === 'usuario' && senha === 'senha') {
+                // Login bem-sucedido
+                alert('Login bem-sucedido! Redirecionando para a página inicial.');
+                window.location.href = 'index.html';
+            } else {
+                // Credenciais inválidas
+                alert('Usuário ou senha inválidos. Por favor, tente novamente.');
+            }
+        }
+    </script>
+-->
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1> Faça seu login<br>E venha fazer parte do PetShop</h1>
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <form method="POST" action="./php/validarLogin.php">
+                    <h1>LOGIN</h1>
+                
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="email" maxlength="30" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" maxlength="20" placeholder="Senha">
+                    </div>
+                    <button class="btn-login">Login</button>
+                </form>
+                <button class="btn-login" onclick="window.location.href = 'cadastro.html'">Cadastre-se</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

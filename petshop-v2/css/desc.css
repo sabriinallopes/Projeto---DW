@@ -1,0 +1,91 @@
+.image {
+    width: 30%;
+    max-height: 100%;
+
+}
+
+.produtoDesc {
+    display: flex;
+    grid-template-columns: 40% 70% 23%;
+    align-items: center;
+    width: 100%;
+}
+
+.prodDesc {
+    width: 150%;
+}
+
+.btnAddCart {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    border: none;
+    background-color: #6b63fff1;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 2%;
+}
+
+.descricao {
+    text-transform: none;
+}
+
+table {
+    margin-top: 5%;
+    max-width: 925px;
+    font-size: 20px;
+
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    width: 400px;
+    font-size: 15px;
+}
+
+/*tr {
+    width: 400px;
+}*/
+
+thead {
+
+    text-transform: uppercase;
+    margin: auto;
+    color: #4F4F4F;
+    align-items: center;
+    
+    
+
+    .precos{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+tbody {
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+
+    .nome {
+        font-weight: bolder;
+    }
+
+    .preco {
+        font-weight: bolder;
+        font-size: 35px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin-right: 35%;
+        margin-left: 40%;
+    }
+}

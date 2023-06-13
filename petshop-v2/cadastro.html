@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se|PetShop</title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" />
+
+    <link rel="stylesheet" href="./css/stylelogin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="https://img.freepik.com/vetores-gratis/gato-bonito-e-cachorro-brincando-juntos-ilustracao-em-vetor-icone-dos-desenhos-animados-icone-de-natureza-animal-isolado-plano_138676-7264.jpg?size=626&ext=jpg&ga=GA1.1.1718632352.1684362525&semt=sph"
+                alt="">
+        </div>
+        <div class="form">
+            <form method="POST" action="./php/cadastro_cliente.php">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome Completo</label>
+                        <input id="nome" type="text" name="nome" maxlength="30" onblur="validaNome()" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">CPF</label>
+                        <input id="sobrenome" type="text" name="cpf" maxlength="30" placeholder="Digite seu CPF" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" maxlength="30" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>                       
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="numero" type="tel" name="number" placeholder="(xx) xxxx-xxxx" onblur="validaNumero(numero)" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="senha" type="password" name="password"  onblur="validaSenha()" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmaSenha" onblur="confirmaSenha()" type="password" name="confirmPassword"
+                            placeholder="Digite sua senha novamente" required>
+                    </div>
+                    
+                </div>
+                <div class="continue-button">
+                    <button type ="submit"class="btn-login" href="login.html">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="cadastro.js"></script>
+</html>
