@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" />
+
+    <link rel="stylesheet" href="cadProduto.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="https://img.freepik.com/vetores-gratis/gato-bonito-e-cachorro-brincando-juntos-ilustracao-em-vetor-icone-dos-desenhos-animados-icone-de-natureza-animal-isolado-plano_138676-7264.jpg?size=626&ext=jpg&ga=GA1.1.1718632352.1684362525&semt=sph"
+                alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastrar Produto</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nameprod">Nome</label>
+                        <input id="nameprod" type="text" name="nameprod" maxlength="30" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="peso">Peso</label>
+                        <input id="pesos" type="text" name="pesoProd" maxlength="10" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idade">Idade</label>
+                        <select id="idade" type="form-select" name="idade" maxlength="20" required></select>
+                    </div>
+                    <div class="input-box">
+                        <label for="valor">Valor</label>
+                        <input id="valor" type="text" name="valorProd" maxlength="8" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="especie">Espécie</label>
+                        <select id="especie" type="form-select" name="especie" maxlength="14" required></select>
+                    </div>
+                    <div class="input-box">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" type="form-select" name="categoria" maxlength="20" required>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="descricao">Descrição</label>
+                        <textarea rows="3" cols="70" id="descricao" type="text" name="descricao" required></textarea>
+                    </div>
+                    <div class="input-box">
+                        <label for="imagem">Imagem</label>
+                        <input id="imagem" type="file" name="image" required>
+                    </div>
+                </div>
+
+
+                <div class="continue-button">
+                    <button type="submit" class="btn-login">Cadastrar Produto</button>
+                </div>
+        </div>
+
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
