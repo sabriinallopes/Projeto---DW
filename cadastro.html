@@ -29,19 +29,19 @@
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
 
-                        <input id="nome" type="text" name="firstname" onblur="validaNome()" placeholder="Digite seu primeiro nome" required>
+                        <input id="nome" type="text" name="firstname" maxlength="30" onblur="validaNome()" placeholder="Digite seu primeiro nome" required>
 
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
 
-                        <input id="sobrenome" type="text" name="lastname" onblur="validaSobrenome()" placeholder="Digite seu sobrenome" required>
+                        <input id="sobrenome" type="text" name="lastname" maxlength="30" onblur="validaSobrenome()" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>
-=======
+                        <input id="email" type="email" name="email" maxlength="30" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>
+
                        
                     </div>
                   
@@ -57,7 +57,7 @@
                     <div class="input-box">
                         <label for="password">Senha</label>
 
-                        <input id="senha" type="password" name="password" onblur="validaSenha()" placeholder="Digite sua senha" required>
+                        <input id="senha" type="password" name="password"  onblur="validaSenha()" placeholder="Digite sua senha" required>
 
                     </div>
 
