@@ -12,8 +12,9 @@
 
     <!--REFERENCIAS-->
     <!-- Chamando o arquivo CSS-->
-    <link rel="stylesheet" href="cssCarrinho.css">
+    <link rel="stylesheet" href="desc.css">
     <link rel="stylesheet" href="styles.css">
+
 
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,15 +36,21 @@
     <div class="container-fluid">
 
         <!--INICÍO DO MENU SUPERIOR-->
-        <nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#FBE292">
+        <nav class=" navbar navbar-expand-lg navbar-light" style="background-color:#FBE292;">
             <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-dog fa-2xl" style="color:#FFAC42;"
                     alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
                 <a class="navbar-brand" href="index.html">PETSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
                         </li>
+
                         <li class="nav-item">
                             <a href="login.html" rel="" class="nav-link">
                                 <i class="fa-solid fa-user"></i>
@@ -59,7 +66,7 @@
         <!--FIM DO MENU SUPERIOR-->
 
         <!--INICIO BARRA DE ATALHOS-->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FBE292;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #FBE292;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -82,7 +89,7 @@
         <!--FIM BARRA DE ATALHOS-->
 
         <!--INICIO DO MENU SECUNDÁRIO-->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FBE292;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #FBE292;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -114,65 +121,56 @@
             </div>
         </nav>
 
-        <br>
 
+        <!--Inicio Descrição produto-->
+        <div class="produtoDesc">
+            <div class="image"><img src="https://images.petz.com.br/fotos/1661783580698.jpg" class="product-thumb"
+                    alt="Biscoito Petz Clássico para Cães Adultos"></div>
+            <section>
+                <table class="prodDesc">
+                    <thead class="cabeDesc">
 
-        <!--INICIO CARRINHO-->
-        <div class="carrinhoCompras">
-            <h2 class="carrinho">Carrinho</h2>
-            <div class="produtos">
-                <section>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Produtos</th>
-                                <th>Nome</th>
-                                <th>Preço</th>
-                                <th>Quantidade</th>
-                                <th>Total produto</th>
-                                <th></th>
-                            </tr>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <td class="produtoImage"> <img src="https://images.petz.com.br/fotos/1628688499151.jpg"
-                                    class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos"></td>
-                            <td class="itemNome">Bifinho KelDog Mini para Cães Adultos Sabor Carne - 500g</td>
-                            <td class="itemPreco">R$21,52</td>
-                            <td>
-                                <div>
-                                    <input type="number" value="1" class="qty" min="0">
-                                </div>
-                            </td>
-                            <td class="itemPreco">R$21,52</td>
-                            <td><button class="btnRemove" onclick="removeItens(event)"><i
-                                        class='bx bxs-trash remove'></i></button></td>
-                        </tbody>
-                        <tbody>
-                            <td class="produtoImage"> <img src="https://images.petz.com.br/fotos/1661783580698.jpg"
-                                    class="product-thumb" alt="Biscoito Petz Clássico para Cães Adultos"></td>
-                            <td class="itemNome">Bifinho Keldog para Cães Adultos Sabor Churrasco</td>
-                            <td class="itemPreco">R$ 26,99</td>
-                            <td>
-                                <div>
-                                    <input type="number" value="1" class="qty" min="0">
-                                </div>
-                            </td>
-                            <td class="itemPreco">R$ 26,99</td>
-                            <td><button class="btnRemove" onclick="removeItens()"><i
-                                        class='bx bxs-trash remove'></i></button></td>
-                        </tbody>
-                    </table>
-                </section>
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
 
-            </div>
-            <div class="total">
-                <div class="totalTitulo">Total: </div>
-                <div class="totalPreco">R$ 0</div>
-            </div>
-            <button type="button" class="btnCompra" href="acompanharPedido.html">Finalizar Pedido</button>
+                            <th><br>Produto<br><br></th>
+                            <td class="nome">Bifinho Keldog Sabor Churrasco</td>
+                            <th></th>
+                        </tr>
+                        <tr>
+
+                            <th>Descrição<br><br></th>
+                            <td class="descricao">Bifinhos para cães adultos se soberearem com pestiscos deliciosos,
+                                sabor Churrasco<br></td>
+                        </tr>
+                        <tr>
+
+                            <th><br>Peso<br><br></th>
+                            <td class="peso">500g<br></td>
+                        </tr>
+                        <tr>
+                            <th>Fabricante<br><br></th>
+                            <td class="fabricante">Kelco<br><br></td>
+                        </tr>
+                        <tr>
+                            <th class="precos">Preço</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <td class="preco">R$ 26,99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
         </div>
-        <!--fIM CARRINHO-->
+        <div><button class="btnAddCart">Adicionar ao Carrinho</button></div>
+        <!--Fim Descrição produto-->
 
         <!-- Criação do Foolder/Rodapé-->
         <footer>

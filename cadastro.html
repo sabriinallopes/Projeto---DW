@@ -28,32 +28,45 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
+
                         <input id="nome" type="text" name="firstname" onblur="validaNome()" placeholder="Digite seu primeiro nome" required>
+
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
+
                         <input id="sobrenome" type="text" name="lastname" onblur="validaSobrenome()" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
                         <input id="email" type="email" name="email" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>
+=======
+                       
                     </div>
+                  
+                    
 
                     <div class="input-box">
                         <label for="number">Celular</label>
+
                         <input id="numero" type="tel" name="number" placeholder="(xx) xxxx-xxxx" onblur="validaNumero(numero)" required>
+
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
+
                         <input id="senha" type="password" name="password" onblur="validaSenha()" placeholder="Digite sua senha" required>
+
                     </div>
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
+
                         <input id="confirmaSenha" onblur="confirmaSenha()" type="password" name="confirmPassword"
                             placeholder="Digite sua senha novamente" required>
+
                     </div>
 
                 </div>
@@ -87,7 +100,7 @@
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button type ="submit"class="btn-login">Cadastrar</button>
                 </div>
             </form>
         </div>
