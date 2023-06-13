@@ -1,11 +1,11 @@
 .carrinho {
     text-align: justify;
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inter', sans-serif;
     margin-left: 2%;
     margin-top: 2%;
     font-weight: bold;
-    color: #808080;
+    color:  #635EF2    ;
 }
 
 .produtos {
