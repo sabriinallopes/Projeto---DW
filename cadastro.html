@@ -28,33 +28,45 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname"maxlength="30" placeholder="Digite seu primeiro nome"
-                            required>
+
+                        <input id="nome" type="text" name="firstname" maxlength="30" onblur="validaNome()" placeholder="Digite seu primeiro nome" required>
+
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname"maxlength="80" placeholder="Digite seu sobrenome" required>
+
+                        <input id="sobrenome" type="text" name="lastname" maxlength="30" onblur="validaSobrenome()" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" maxlength="80" placeholder="Digite seu e-mail" required>
+                        <input id="email" type="email" name="email" maxlength="30" onblur="validaEmail(email)" placeholder="Digite seu e-mail" required>
+
+                       
                     </div>
+                  
+                    
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" maxlength="14" placeholder="(xx) xxxx-xxxx" required>
+
+                        <input id="numero" type="tel" name="number" placeholder="(xx) xxxx-xxxx" onblur="validaNumero(numero)" required>
+
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" maxlength="20" placeholder="Digite sua senha" required>
-                    </div>
 
+                        <input id="senha" type="password" name="password"  onblur="validaSenha()" placeholder="Digite sua senha" required>
+
+                    </div>
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" maxlength="20" placeholder="Digite sua senha novamente" required>
+
+                        <input id="confirmaSenha" onblur="confirmaSenha()" type="password" name="confirmPassword"
+                            placeholder="Digite sua senha novamente" required>
+
                     </div>
 
                 </div>
@@ -88,11 +100,11 @@
                 </div>
 
                 <div class="continue-button">
-                    <button type ="submit"class="btn-login">Cadastrar</button>
+                    <button type ="submit"class="btn-login" href="login.html">Cadastrar</button>
                 </div>
             </form>
         </div>
     </div>
 </body>
-
+<script src="cadastro.js"></script>
 </html>
